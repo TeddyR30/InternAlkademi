@@ -35,7 +35,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 10px;
 }
 
 nav ul li a {
@@ -54,13 +54,13 @@ nav ul li button {
 }
 
 .button {
-    background-color: transparent;
     padding: 20px 35px 20px 35px;
     gap: 10px;
     border-radius: 14px;
     border-color: #000000;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+    background-color: transparent;
 }
 
 .hero {
@@ -329,27 +329,40 @@ nav ul li button {
     border-radius: 10px;
     width: 100%;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .team h2 {
     margin-bottom: 10px;
+    text-align: center;
+    display: center;
+    background-color: #b9ff66;
+    width: 6%;
+    padding: 8px;
+    border-radius: 8px;
 }
 
-.team p {
-    margin-bottom: 20px;
+.team a {
+    margin-bottom: 10px;
+    display: center;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
 }
 
 .team-members {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .member {
     background-color: #f9f9f9;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
 }
 
@@ -367,35 +380,50 @@ nav ul li button {
 .member span {
     display: block;
     margin-bottom: 10px;
-    color: #777;
+    color: #000000;
 }
 
 .member p {
     font-size: 14px;
-    color: #555;
+    color: #000000;
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
+    padding: 10px;
     cursor: pointer;
+    margin-bottom: 20px;
+    background-color: black;
+    color: #ffffff;
+    gap: 10px;
+    border-radius: 10px;
+    border-color: #000000;
+    border: 1px 0px 0px 0px;
+    text-align: center;
+    width: 40%;
+    align-items: flex-end;
 }
 
 .testimonials {
-    text-align: center;
-    margin: 40px 0;
+    text-align: left;
+    margin: 40px ;
 }
 
 .testimonials h2 {
     margin-bottom: 10px;
+    display: center;
+    text-align: center;
+    background-color: #b9ff66;
+    width: 12%;
+    padding: 8px;
+    border-radius: 8px;
 }
 
-.testimonials p {
-    margin-bottom: 20px;
+.testimonials a {
+    margin-bottom: 10px;
+    display: center;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
 }
 
 .testimonial {
@@ -413,51 +441,73 @@ button {
 }
 
 .contact {
-    text-align: center;
+    text-align: left;
     margin: 40px 0;
+    margin-left: 20px;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    display: center;
+    text-align: center;
+    background-color: #b9ff66;
+    width: 12%;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.contact a {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
 }
 
 .contact .radio-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 20px;
 }
 
 .contact .radio-buttons label {
     margin: 0 10px;
+    text-align: left;
 }
 
 .contact form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 }
 
 .contact form input,
 .contact form textarea {
     margin: 10px 0;
     padding: 10px;
-    width: 100%;
+    width: 20%;
     max-width: 500px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: left;
 }
 
 .contact form button {
     padding: 10px 20px;
-    background-color: #b9ff66;
+    background-color: #000000;
     border: none;
     cursor: pointer;
+    width: 20%;
 }
 
 footer {
-    background-color: #f3f3f3;
+    background-color: #000000;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
 
 footer .footer-logo {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 footer nav ul {
@@ -470,6 +520,7 @@ footer nav ul {
 
 footer nav ul li {
     margin: 0 10px;
+    
 }
 
 footer .social-media {
@@ -478,6 +529,18 @@ footer .social-media {
 
 footer .contact-info {
     margin: 20px 0;
+    text-align: left;
+}
+
+footer .contact-info h4 {
+    margin-bottom: 10px;
+    display: center;
+    text-align: center;
+    background-color: #b9ff66;
+    width: 10%;
+    padding: 8px;
+    border-radius: 8px;
+    color: #000000;
 }
 
 footer form {
@@ -502,4 +565,13 @@ footer form button {
 
 footer p {
     margin: 10px 0;
+}
+
+.border {
+    color : #292A32;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    background-color: wheat;
 }
