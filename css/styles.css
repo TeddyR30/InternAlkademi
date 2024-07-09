@@ -1,0 +1,244 @@
+/* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0%, 100px, 0px, 100px;
+}
+
+header {
+    width: Fixed (1,440px)px;
+    height: Hug (68px)px;
+    padding: 0px 100px 0px 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+header img {
+    width: 170.62px;
+    height: 28.56px;
+}
+
+header .nav {
+    display: flex;
+}
+
+header .nav ul li {
+    display: inline-block;
+    width: Hug (811px)px;
+    height: Hug (68px)px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+header .nav ul button {
+    background-color: transparent;
+    width: Hug (231px)px;
+    height: Hug (68px)px;
+    padding: 20px 35px 20px 35px;
+    border-radius: 14px;
+    border: 1px 0px 0px 0px;
+}
+
+header .nav ul .btn-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: black;
+}
+
+.hero {
+    margin: 70px 100px;
+    width: Fixed (1,240px)px;
+    height: Hug (515px)px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.hero-typo {
+    width: 531px;
+    height: 481px;
+    margin-right: 108px;
+}
+
+.hero-typo h1 {
+    width: 531px;
+    height: 231px;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 76.56px;
+    text-align: left;
+    margin-top: 70px;
+}
+
+.hero-typo p {
+    width: 498px;
+    height: 112px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.hero-img {
+    width: 600.46px;
+    height: 515px;
+    border: 1px 0px 0px 0px;
+    margin-top: 70px;
+}
+
+.hero-typo button {
+    width: Hug (264px)px;
+    height: Hug (68px)px;
+    padding: 20px 35px 20px 35px;
+    border-radius: 14px;
+    background-color: #191A23;
+    margin-top: 35px;
+}
+
+button .btn-typo {
+    width: 194px;
+    height: 28px;
+    margin-bottom: 34px;
+}
+
+.btn-typo {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    font-family: Space Grotesk;
+}
+
+.logo {
+    width: Fixed (1,440px)px;
+    height: Hug (48px)px;
+    padding: 0px 100px 0px 100px;
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 115px;
+}
+
+.logo img {
+    width: Fixed (1,240px)px;
+    height: Hug (48px)px;
+    margin-right: 96.56px;
+}
+
+.services {
+    width: Fixed (1,443px)px;
+    height: Fixed (51px)px;
+    top: 926px;
+    padding: 0px 100px 0px 100px;
+    margin-top: 115px;
+    margin-bottom: 120px;
+}
+
+.sv-head {
+    align-items: center;
+    display: flex;
+    width: Fixed (1,240px)px;
+    height: Hug (51px)px;
+}
+
+.sv-head h2 {
+    padding: 0px 7px 0px 7px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+    width: 164px;
+    height: 51px;
+    font-family: Space Grotesk;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 51.04px;
+    text-align: left;
+    margin-right: 40px;
+}
+
+.sv-head p {
+    width: 580px;
+    height: 46px;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.97px;
+}
+
+/* .cards {
+    width: 1443px;
+    height: 1010px;
+    background-color: red;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.card-section {
+    width: Fixed (1,240px)px;
+    height: Hug (1,010px)px;
+    background-color: blue;
+    margin-left: 100px;
+    margin-right: 103px;
+}
+
+.card-area {
+    width: Fixed (600px)px;
+    height: Hug (310px)px;
+    padding: 50px;
+    border-radius: 45px;
+    border: 1px;
+    border-color: #191A23;
+    box-shadow: #191A23;
+    background-color: #F3F3F3;
+}
+
+.area-link h3{
+    margin: 0;
+}
+
+.up {
+    width: 221px;
+    height: 38px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+    text-align: center;
+    padding: 0px 7px 0px 7px;
+}
+
+.down{
+    width: 197px;
+    height: 38px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+    text-align: center;
+    padding: 0px 7px 0px 7px;
+}
+
+.link {
+    width: 164px;
+    height: 41px;
+    display: inline-block;
+}
+
+.link img {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+a{
+    width: 108px;
+    height: 28px;
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-decoration: none;
+} */
