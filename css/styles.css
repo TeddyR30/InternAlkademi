@@ -1,19 +1,84 @@
 /* CSS */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
 * {
-    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
 }
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    padding: 0%, 100px, 0px, 100px;
 }
 
 header {
-    width: Fixed (1,440px)px;
-    height: Hug (68px)px;
-    padding: 0px 100px 0px 100px;
-    display: flex;
+    width: 1443px;
+    height: 68px;
+    padding: 0px 100px;
+    display: inline-block;
     align-items: center;
     margin-top: 40px;
     justify-content: space-between;
@@ -25,7 +90,9 @@ header img {
 }
 
 header .nav {
-    display: flex;
+    display: inline-block;
+    align-items: center;
+    margin-left: 176px;
 }
 
 header .nav ul li {
@@ -42,7 +109,7 @@ header .nav ul button {
     height: Hug (68px)px;
     padding: 20px 35px 20px 35px;
     border-radius: 14px;
-    border: 1px 0px 0px 0px;
+    border: 1px solid #000000;
 }
 
 header .nav ul .btn-text {
@@ -55,7 +122,7 @@ header .nav ul .btn-text {
 
 .hero {
     margin: 70px 100px;
-    width: Fixed (1,240px)px;
+    width: Fixed (1, 240px)px;
     height: Hug (515px)px;
     justify-content: space-between;
     display: flex;
@@ -118,7 +185,7 @@ button .btn-typo {
 }
 
 .logo {
-    width: Fixed (1,440px)px;
+    width: Fixed (1, 440px)px;
     height: Hug (48px)px;
     padding: 0px 100px 0px 100px;
     display: flex;
@@ -127,13 +194,13 @@ button .btn-typo {
 }
 
 .logo img {
-    width: Fixed (1,240px)px;
+    width: Fixed (1, 240px)px;
     height: Hug (48px)px;
     margin-right: 96.56px;
 }
 
 .services {
-    width: Fixed (1,443px)px;
+    width: Fixed (1, 443px)px;
     height: Fixed (51px)px;
     top: 926px;
     padding: 0px 100px 0px 100px;
@@ -144,7 +211,7 @@ button .btn-typo {
 .sv-head {
     align-items: center;
     display: flex;
-    width: Fixed (1,240px)px;
+    width: Fixed (1, 240px)px;
     height: Hug (51px)px;
 }
 
@@ -171,68 +238,88 @@ button .btn-typo {
     line-height: 22.97px;
 }
 
-/* .cards {
+.card {
     width: 1443px;
     height: 1010px;
-    background-color: red;
-    display: inline-block;
-    align-items: center;
-    text-align: center;
+    top: 1092px;
+    padding: 0px 100px;
+    gap: 40px;
 }
 
-.card-section {
-    width: Fixed (1,240px)px;
-    height: Hug (1,010px)px;
-    background-color: blue;
-    margin-left: 100px;
-    margin-right: 103px;
+.card-layout {
+    width: 1240px;
+    height: 1010px;
+    gap: 40px;
+    display: grid;
 }
 
-.card-area {
-    width: Fixed (600px)px;
-    height: Hug (310px)px;
+.carding {
+    width: 600px;
+    height: 310px;
     padding: 50px;
     border-radius: 45px;
-    border: 1px;
-    border-color: #191A23;
-    box-shadow: #191A23;
+    border: 1px solid #191A23;
     background-color: #F3F3F3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
-.area-link h3{
+.headlink {
+    gap: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text h3 {
+    background-color: #B9FF66;
+    font-family: Space Grotesk;
     margin: 0;
 }
 
-.up {
-    width: 221px;
-    height: 38px;
+h3.up {
+    padding: 0px 7px;
+    gap: 10px;
     border-radius: 7px;
-    background-color: #B9FF66;
-    text-align: center;
-    padding: 0px 7px 0px 7px;
-}
-
-.down{
-    width: 197px;
+    width: 207px;
     height: 38px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+}
+
+h3.down {
+    width: 183px;
+    height: 38px;
+    padding: 0px 7px;
+    gap: 10px;
     border-radius: 7px;
-    background-color: #B9FF66;
-    text-align: center;
-    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
 }
 
-.link {
-    width: 164px;
-    height: 41px;
-    display: inline-block;
+.card-text2 {
+    /* width: Hug (164px)px;
+    height: Hug (41px)px; */
+    gap: 15px;
+    margin-right: 57px;
+    display: flex;
+    align-items: center;
 }
 
-.link img {
-    margin-left: 50px;
-    margin-bottom: 50px;
-}
-
-a{
+.card-text2 a {
     width: 108px;
     height: 28px;
     font-family: Space Grotesk;
@@ -241,4 +328,19 @@ a{
     line-height: 28px;
     text-align: left;
     text-decoration: none;
-} */
+    color: #000000;
+    margin: 6.5px 0;
+    margin-left: 15px;
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.card-img img {
+    width: 210px;
+    height: 166.05px;
+    top: 2px;
+}
