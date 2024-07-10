@@ -1,8 +1,144 @@
 /* CSS */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 /*
-1. Use a more-intuitive box-sizing model.
+    1. Use a more-intuitive box-sizing model.
 */
 *,
 *::before,
@@ -70,60 +206,72 @@ h6 {
     isolation: isolate;
 }
 
+/* CSS BODY */
 body {
     font-family: 'Space Grotesk', sans-serif;
 }
 
+/* HEADER SECTION */
 header {
     width: 1443px;
     height: 68px;
-    padding: 0px 100px;
-    display: inline-block;
-    align-items: center;
     margin-top: 40px;
-    justify-content: space-between;
+    padding: 0px 100px;
 }
 
-header img {
-    width: 170.62px;
-    height: 28.56px;
+header .navbar {
+    width: 1240px;
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header .icon {
+    width: 219.54px;
+    height: 56px;
+    padding: 10px 0px;
+    margin-right: 209.46px;
 }
 
 header .nav {
+    width: 811px;
+    height: 68px;
     display: inline-block;
-    align-items: center;
-    margin-left: 176px;
 }
 
-header .nav ul li {
-    display: inline-block;
-    width: Hug (811px)px;
-    height: Hug (68px)px;
-    margin-right: 40px;
+header .nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul li {
     font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 header .nav ul button {
-    background-color: transparent;
-    width: Hug (231px)px;
-    height: Hug (68px)px;
     padding: 20px 35px 20px 35px;
     border-radius: 14px;
     border: 1px solid #000000;
+    background-color: transparent;
 }
 
 header .nav ul .btn-text {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
     text-align: center;
     color: black;
+    font-size: 20px;
+    font-weight: 400;
 }
+
+/* CSS HERO SECTION */
 
 .hero {
     margin: 70px 100px;
-    width: Fixed (1, 240px)px;
-    height: Hug (515px)px;
+    width: 1240px;
     justify-content: space-between;
     display: flex;
 }
@@ -131,7 +279,8 @@ header .nav ul .btn-text {
 .hero-typo {
     width: 531px;
     height: 481px;
-    margin-right: 108px;
+    margin-right: 108.54px;
+    gap: 35px;
 }
 
 .hero-typo h1 {
@@ -142,6 +291,7 @@ header .nav ul .btn-text {
     line-height: 76.56px;
     text-align: left;
     margin-top: 70px;
+    margin-bottom: 35px;
 }
 
 .hero-typo p {
@@ -151,29 +301,23 @@ header .nav ul .btn-text {
     font-weight: 400;
     line-height: 28px;
     text-align: left;
+    margin-bottom: 35px;
 }
 
 .hero-img {
     width: 600.46px;
     height: 515px;
-    border: 1px 0px 0px 0px;
+    border: 1px;
     margin-top: 70px;
 }
 
 .hero-typo button {
-    width: Hug (264px)px;
-    height: Hug (68px)px;
     padding: 20px 35px 20px 35px;
     border-radius: 14px;
     background-color: #191A23;
-    margin-top: 35px;
+    gap: 10px;
 }
 
-button .btn-typo {
-    width: 194px;
-    height: 28px;
-    margin-bottom: 34px;
-}
 
 .btn-typo {
     color: white;
@@ -184,44 +328,36 @@ button .btn-typo {
     font-family: Space Grotesk;
 }
 
+/* CSS COMPANY LOGO SECTION */
+
 .logo {
-    width: Fixed (1, 440px)px;
-    height: Hug (48px)px;
-    padding: 0px 100px 0px 100px;
-    display: flex;
     margin-top: 70px;
     margin-bottom: 115px;
+    padding: 0px 100px 0px 100px;
+    display: flex;
 }
 
 .logo img {
-    width: Fixed (1, 240px)px;
-    height: Hug (48px)px;
-    margin-right: 96.56px;
+    margin-right: 96px;
 }
 
+/* CSS SERVICE SECTION */
+
 .services {
-    width: Fixed (1, 443px)px;
-    height: Fixed (51px)px;
-    top: 926px;
-    padding: 0px 100px 0px 100px;
+    padding: 0px 100px;
     margin-top: 115px;
-    margin-bottom: 120px;
+    margin-bottom: 115px;
 }
 
 .sv-head {
     align-items: center;
     display: flex;
-    width: Fixed (1, 240px)px;
-    height: Hug (51px)px;
 }
 
 .sv-head h2 {
-    padding: 0px 7px 0px 7px;
+    padding: 0px 7px;
     border-radius: 7px;
     background-color: #B9FF66;
-    width: 164px;
-    height: 51px;
-    font-family: Space Grotesk;
     font-size: 40px;
     font-weight: 500;
     line-height: 51.04px;
@@ -232,11 +368,12 @@ button .btn-typo {
 .sv-head p {
     width: 580px;
     height: 46px;
-    font-family: Space Grotesk;
     font-size: 18px;
     font-weight: 400;
     line-height: 22.97px;
 }
+
+/* CSS CARD SECTION */
 
 .card {
     width: 1443px;
@@ -251,7 +388,46 @@ button .btn-typo {
     height: 1010px;
     gap: 40px;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
+
+.headlink {
+    gap: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.card-text h3 {
+    margin: 0;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.card-img img {
+    width: 210px;
+    height: 166.05px;
+    top: 2px;
+}
+
+.card-text2 {
+    margin-right: 57px;
+    display: flex;
+    align-items: center;
+}
+
+/* CARD 1 */
 
 .carding {
     width: 600px;
@@ -264,59 +440,28 @@ button .btn-typo {
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-}
-
-.headlink {
-    gap: 93px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
-}
-
-.card-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.card-text h3 {
-    background-color: #B9FF66;
-    font-family: Space Grotesk;
-    margin: 0;
+    box-shadow: 0px 5px 0px 0px #191A23;
 }
 
 h3.up {
     padding: 0px 7px;
-    gap: 10px;
     border-radius: 7px;
-    width: 207px;
-    height: 38px;
     font-size: 30px;
     font-weight: 500;
     line-height: 38.28px;
     text-align: left;
+    background-color: #B9FF66;
 }
 
 h3.down {
-    width: 183px;
-    height: 38px;
+    width: 197px;
     padding: 0px 7px;
-    gap: 10px;
     border-radius: 7px;
     font-size: 30px;
     font-weight: 500;
     line-height: 38.28px;
     text-align: left;
-}
-
-.card-text2 {
-    /* width: Hug (164px)px;
-    height: Hug (41px)px; */
-    gap: 15px;
-    margin-right: 57px;
-    display: flex;
-    align-items: center;
+    background-color: #B9FF66;
 }
 
 .card-text2 a {
@@ -333,14 +478,215 @@ h3.down {
     margin-left: 15px;
 }
 
-.card-img {
+/* CARD 2 */
+
+.carding2 {
+    width: 600px;
+    height: 310px;
+    padding: 50px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    background-color: #B9FF66;
     display: flex;
-    align-items: center;
-    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 0px 0px #191A23;
 }
 
-.card-img img {
-    width: 210px;
-    height: 166.05px;
-    top: 2px;
+h3.up2 {
+    padding: 0px 7px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+h3.down2 {
+    width: 178px;
+    padding: 0px 7px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+/* CARD 3 */
+
+.carding3 {
+    width: 600px;
+    height: 310px;
+    padding: 50px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    background-color: #191A23;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+h3.up3 {
+    padding: 0px 7px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+h3.down3 {
+    width: 161px;
+    padding: 0px 7px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+.card-text2-3 {
+    margin-right: 57px;
+    display: flex;
+    align-items: center;
+}
+
+.card-text2-3 a {
+    width: 108px;
+    height: 28px;
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 6.5px 0;
+    margin-left: 15px;
+}
+
+/* CARD 4 */
+
+h3.up4 {
+    width: 90px;
+    padding: 0px 7px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+    background-color: #B9FF66;
+}
+
+h3.down4 {
+    width: 161px;
+    padding: 0px 7px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+    background-color: #B9FF66;
+}
+
+
+/* CARD 5 */
+.carding5 {
+    width: 600px;
+    height: 310px;
+    padding: 50px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    background-color: #B9FF66;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+h3.up5 {
+    width: 133px;
+    padding: 0px 7px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+h3.down5 {
+    width: 137px;
+    padding: 0px 7px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+/* CARD 6 */
+
+.carding6 {
+    width: 600px;
+    height: 310px;
+    padding: 50px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    background-color: #191A23;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+h3.up6 {
+    padding: 0px 7px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+    background-color: #B9FF66;
+}
+
+h3.down6 {
+    width: 138px;
+    padding: 0px 7px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+    background-color: #B9FF66;
+}
+
+.card-text2-6 {
+    margin-right: 57px;
+    display: flex;
+    align-items: center;
+}
+
+.card-text2-6 a {
+    width: 108px;
+    height: 28px;
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 6.5px 0;
+    margin-left: 15px;
 }
